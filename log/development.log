@@ -104,3 +104,13 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 328ms (Views: 283.4ms | ActiveRecord: 1.1ms)
 
 
+Started POST "/posts" for 24.126.79.20 at 2019-07-22 03:48:46 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0ADQLa0iTk3+emYWTxOpB+xyf0xoT8sgutA0+66+UxGa6xSNqn9doAYHQ0t1IjqXcahO7G3Di2i2F4mwNCAWOg==", "title"=>"Hello", "description"=>"I'm Lisa!", "commit"=>"Submit Post"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Hello"], ["description", "I'm Lisa!"], ["created_at", "2019-07-22 03:48:46.945980"], ["updated_at", "2019-07-22 03:48:46.945980"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+No template found for PostsController#create, rendering head :no_content
+Completed 204 No Content in 24ms (ActiveRecord: 4.9ms)
+
+
